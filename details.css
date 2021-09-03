@@ -1,0 +1,166 @@
+.LearningDetails {
+    margin-top: 100px;
+    
+
+
+    
+
+    
+}
+
+.topSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    background-color: #232156;
+
+    
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin-top: 50px;
+    
+
+}
+
+
+.header-title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #f39520;
+    text-transform: uppercase;
+}
+
+.vertical-line {
+    height: 2px;
+    width: 30%;
+    background-color: #f39520;
+}
+
+
+.round {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f39520;
+
+    
+}
+
+
+.round-content {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #232156;
+}
+
+.bottomSide{
+    padding: 15px;
+
+}
+
+.courses {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+.courseItem .fa {
+    font-size: 30px;
+    color: #3055a1;
+    margin-right: 10px;
+}
+.courseItem {
+    width: calc(100%/4);
+    cursor: pointer;
+    
+}
+
+.courseItem .content{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content a {
+    width: 100%;
+}
+.itemIllustration {
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;                
+}
+
+.courseItem .itemTitle {
+    color: #232156;
+    font-weight: bolder;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.courseItem .itemTitle a {
+    font-size: 12px;
+    width: auto !important;
+}
+
+.label {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #000;
+    text-transform: none;
+    letter-spacing: 1px;
+    
+}
+
+.label :hover {
+    color: #f39520;
+    cursor: pointer;
+}
+
+.label p {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.label p a{
+    font-size: 12px;
+    font-weight: normal;
+    color: #f39520;
+}
+
+.label p i {
+    font-size: 12px;
+    margin-left: 5px;
+}

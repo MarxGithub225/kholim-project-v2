@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+
+<!-- Mirrored from www.energywaterintl.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 19:59:27 GMT -->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>KHOLIM | SERVICES ET FORMATIONS</title>
+
+    <meta name="author" content="themsflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- Theme style -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <link rel="stylesheet"  href="./details.css" />
+</head>
+
+<body >
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div> <!-- /.loading-overlay -->
+
+    <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+                <img src ="./images/kholimLogo.png" alt = "" style = "width: 150px;" />
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
+              <li class="scroll-to-section"><a href="formations.html">Formations</a></li>
+              <li class="scroll-to-section"><a href="#services">Audit &amp; Assistance</a></li>
+              <li class="scroll-to-section"><a href="technique.html">Technique</a></li>
+              <!-- <li class="scroll-to-section"><a href="#blog">Nos actualités</a></li>  -->
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contactez Nous</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class = "LearningDetails header-text" id="modules">
+    <div class = "topSide" >
+        <div class = "title">
+        <i class="fa fa-graduation-cap"></i> {{Selected.title}}
+        </div>
+    </div>
+    <div class = "bottomSide">
+
+        <div class="header"><div class="round"><div class="round-content"></div></div><div class="header-title"> Les modules </div><div class="vertical-line"></div></div>
+        <div class = "courses">
+            <div class = "courseItem" v-for="(c, index) in Selected.courses" :key="index">
+
+                <a v-bind:href="'module.html?title=' + c.ulr">
+                    <div class="content">
+                        <div class = "itemIllustration" v-bind:style="{ backgroundImage: 'url(' + Selected.images + ')' }"
+                        >
+                        </div>
+    
+                        <div class = "itemTitle"
+                        >
+                        <i class="fa fa-graduation-cap"></i>  <a
+                        v-bind:href="'module.html?title=' + c.ulr"></a>
+                            >
+                            {{c.label}}</a>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="contact-us section">
+  <div class="container">
+  <div class="row">
+      <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+      <div class="section-heading">
+          <h2>N'hésitez pas à nous envoyer un message sur vos besions</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
+          <div class="phone-info">
+          <h4>Appelez-nous ici : <span><i class="fa fa-phone"></i> <a href="/">010-020-0340</a></span></h4>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+      <form id="contact" action="#" method="post">
+          <div class="row">
+          <div class="col-lg-6">
+              <fieldset>
+              <input type="name" name="name" id="name" placeholder="Nom" autoComplete="on" required />
+              </fieldset>
+          </div>
+          <div class="col-lg-6">
+              <fieldset>
+              <input type="surname" name="surname" id="surname" placeholder="Prénom(s)" autoComplete="on" required />
+              </fieldset>
+          </div>
+          <div class="col-lg-12">
+              <fieldset>
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Votre e-mail" required="" />
+              </fieldset>
+          </div>
+          <div class="col-lg-12">
+              <fieldset>
+              <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+              </fieldset>
+          </div>
+          <div class="col-lg-12">
+              <fieldset>
+              <button type="submit" id="form-submit" class="main-button ">Envoyer</button>
+              </fieldset>
+          </div>
+          </div>
+          <div class="contact-dec">
+          <img src="./images/contactDecoration.png" alt="" />
+          </div>
+      </form>
+      </div>
+  </div>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>&copy; Copyright 2021 Kholim. Tous droits réservés. 
+            <br/>
+            Conçu par: <a rel="nofollow" href="https://www.marx-nguessan.com/">N'Gessan Marx</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <a id="scroll-top"></a> <!-- /#scroll-top -->
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+
+    <!-- Javascript -->
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/plugins.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/flex-slider.min.js"></script>
+    <script src="javascript/jquery-countTo.js"></script>
+    <script src="javascript/jquery-fancybox.js"></script>
+    <script src="javascript/equalize.min.js"></script>
+    <script src='javascript/jquery-isotope.js'></script>
+    <script src="javascript/owl.carousel.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <!-- Slider -->
+    <script src="rev-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="javascript/rev-slider.js"></script>
+
+    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
+    <script src="rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+
+        function replace(text) {
+                  const a = text.split(' ').join('-');
+
+
+                  const b = a.split("é").join('e');
+
+                  const c = b.split("è").join('e');
+
+                  const d = c.split("à").join('a');
+
+                  return d.toLowerCase();
+            }
+
+        var Modules = [
+            {
+                title : 'Management des systèmes & Qualification des auditeurs internationaux',
+                images: './images/avantages/av5.png',
+                courses : [
+                    {
+                        label: 'Leadership et management des organisations',
+                        ulr : replace('Leadership et management des organisations')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 9001',
+                        ulr : replace('Lead auditeur ISO 9001')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 14001',
+                        ulr : replace('Lead auditeur ISO 14001')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 45001',
+                        ulr : replace('Lead auditeur ISO 45001')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 22000',
+                        ulr : replace('Lead auditeur ISO 22000')
+                    },
+
+
+
+                    {
+                        label: 'Lead auditeur ISO 27001',
+                        ulr : replace('Lead auditeur ISO 27001')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 26000',
+                        ulr : replace('Lead auditeur ISO 26000')
+                    },
+                    {
+                        label: 'Lead auditeur ISO 26000',
+                        ulr : replace('Lead auditeur ISO 26000')
+                    },
+                    {
+                        label: 'Lead implementer QSE & SDA & Sociétale',
+                        ulr : replace('Lead implementer QSE & SDA & Sociétale')
+                    },
+                    {
+                        label: 'Lead Management project ISO 21500',
+                        ulr : replace('Lead Management project ISO 21500')
+                    },
+                    {
+                        label: 'Evaluation risques professionnels',
+                        ulr : replace('Evaluation risques professionnels')
+                    },
+                    {
+                        label: 'Gestion de crises',
+                        ulr : replace('Gestion de crises')
+                    }
+                ]
+            },
+            {   title : 'Management du secteur Public',
+                images: './images/avantages/av4.png',
+                courses : [
+                    {
+                        label: 'Santé Publique',
+                        ulr : replace('Santé Publique')
+                    },
+                    {
+                        label: 'Finance publique',
+                        ulr : replace('Finance publique')
+                    },
+                    {
+                        label: 'Passation des',
+                        ulr : replace('Passation des')
+                    },
+                    {
+                        label: 'Développement local',
+                        ulr : replace('Développement local')
+                    },
+                    {
+                        label: 'Modernisation de l’administration Publique',
+                        ulr : replace('Modernisation de l’administration Publique')
+                    },
+                    {
+                        label: 'Infrastructure',
+                        ulr : replace('Infrastructure')
+                    },
+                    {
+                        label: 'Water, Sanitation et Hygiène',
+                        ulr : replace('Water, Sanitation et Hygiène')
+                    },
+                    {
+                        label: 'Egalité des genres',
+                        ulr : replace('Egalité des genres')
+                    },
+                    {
+                        label: 'Agriculture, Nutrition et sécurité alimentaire',
+                        ulr : replace('Agriculture, Nutrition et sécurité alimentaire')
+                    },
+                    {
+                        label: 'Projet et programme de developpement',
+                        ulr : replace('Projet et programme de developpement')
+                    },
+                    {
+                        label: 'Education',
+                        ulr : replace('Education')
+                    }
+                ]
+            },
+            {   title : 'Formation sectorielle & Formation à la carte',
+                images: './images/avantages/av6.png',
+                courses : [
+                    {
+                        label: 'Formation certifiante en agriculture et sécurité alimentaire',
+                        ulr : replace('Formation certifiante en agriculture et sécurité alimentaire')
+                    },
+                    {
+                        label: 'Changement climatique',
+                        ulr : replace('Changement climatique')
+                    },
+                    {
+                        label: 'Sécretariat bureautique',
+                        ulr : replace('Sécretariat bureautique')
+                    },
+                    {
+                        label: 'Developpement social',
+                        ulr : replace('Developpement social')
+                    }
+                ]
+            },
+            {   title : 'Formation Sécurité incendie & Santé Sécurité au travail',
+                images: './images/avantages/av3.png',
+                courses : [
+                    
+
+                    {
+                        label: 'Formation syndicales',
+                        ulr : replace('Formation syndicales')
+                    },
+                    {
+                        label: 'Comprendre et appliquer la reglementation SST',
+                        ulr : replace('Comprendre et appliquer la reglementation SST')
+                    },
+                    {
+                        label: 'Le comité SST',
+                        ulr : replace('Le comité SST')
+                    },
+                    {
+                        label: 'Etude d’un poste de travail',
+                        ulr : replace('Etude d’un poste de travail')
+                    },
+                    {
+                        label: 'Aptitude médicale au poste de travail',
+                        ulr : replace('Aptitude médicale au poste de travail')
+                    },
+                    {
+                        label: 'Analyse des incidents et accidents de travail',
+                        ulr : replace('Analyse des incidents et accidents de travail')
+                    },
+                    {
+                        label: 'Savoir construire l’arbre des causes et plan d’action',
+                        ulr : replace('Savoir construire l’arbre des causes et plan d’action')
+                    },
+                    {
+                        label: 'Gestion du stress',
+                        ulr : replace('Gestion du stress')
+                    },
+                    {
+                        label: 'Equipier de 1er intervention ',
+                        ulr : replace('Equipier de 1er intervention ')
+                    },
+                    {
+                        label: 'Equipier de 2nd intervention',
+                        ulr : replace('Equipier de 2nd intervention')
+                    },
+                    {
+                        label: 'Elaboration et mise en œuvre POI',
+                        ulr : replace('Elaboration et mise en œuvre POI')
+                    },
+                    {
+                        label: 'Sauveteur et secouriste au travail',
+                        ulr : replace('Sauveteur et secouriste au travail')
+                    },
+                    {
+                        label: 'Habilitation électrique du personnel',
+                        ulr : replace('Habilitation électrique du personnel')
+                    },
+                    {
+                        label: 'Evaluation risques professionnels',
+                        ulr : replace('Evaluation risques professionnels')
+                    }
+                ]
+            }
+        ];
+        
+        const param = window.location.search.split('?title=').join('');
+        
+
+        let selected = {}
+        Modules.forEach(m => {
+              if(replace(m.title) == param) {
+                
+                selected = m;
+              }
+        })
+
+
+        console.log(param, selected)
+        new Vue({
+          el: '#modules',
+          data : {
+            Selected: selected
+          }
+        });
+      </script>
+
+</body>
+
+
+<!-- Mirrored from www.energywaterintl.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 20:01:33 GMT -->
+</html>

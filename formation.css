@@ -1,0 +1,345 @@
+.Learning {
+    margin-top: 100px;
+    padding: 15px;
+    
+}
+
+.Learning .topSide .Left {
+    width: 70%;
+    height: 390px;
+    
+}
+
+
+.Learning .topSide .Left img {
+    width: 100% !important;
+    height: 390px !important;
+}
+
+
+.Learning .topSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 390px;
+
+
+    
+
+    
+}
+
+
+.Learning .topSide .Right {
+    width: 30%;
+    height: 390px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    
+}
+
+.Learning .topSide .Right .optionItem {
+    box-shadow: 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f39520;
+
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.Learning .topSide .Right .optionItem  .opt-icon img {width: 30px; height: auto;}
+
+.Learning .topSide .Right .optionItem  .opt-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 7px;
+    margin-left: 11px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin-top: 50px;
+    
+
+
+}
+
+
+.header-title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #f39520;
+    text-transform: uppercase;
+}
+
+.vertical-line {
+    height: 2px;
+    width: 30%;
+    background-color: #f39520;
+}
+.round {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f39520;
+
+    
+}
+
+
+.round-content {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #232156;
+}
+
+.avantages {
+    
+}
+
+.title-1 {
+    color: #232156;
+    display: block;
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.avantagesList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.avantagesList .avantagesListItem {
+    padding: 25px;
+    
+}
+
+.avantagesListItem ul {
+    list-style: none;
+    
+}
+
+.avantagesListItem ul li {
+    color: #232156;
+
+}
+
+.avantagesListItem ul li:before {
+    content: "•";
+    color: #f39520;
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 15px;
+}
+
+
+.avantagesImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+
+.avantagesImages .av-i-item {
+    padding: 15px;
+    width: calc(100% / 3);
+
+    
+}
+
+.av-i-item .itemIllustration {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;                    
+}
+
+.av-i-item .itemTitle {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bolder;
+   
+    text-align: center;
+    background: rgb(35, 33, 86, .8);
+    padding: 5px 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.modules .moduleList {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    
+}
+
+.moduleList .moduleItem {
+    padding: 15px;
+    width: calc(100% / 4);
+
+   
+}
+
+.moduleItem .itemIllustration {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+    cursor: pointer;
+    
+}
+
+
+.moduleItem .itemIllustration .hoverBlack {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    
+    
+}
+
+.moduleItem .itemIllustration .hoverBlack img {
+    width: 40px;
+    height: auto;
+    display: none;
+}
+.moduleItem .itemIllustration :hover .hoverBlack {
+    
+    background-color: rgba(0,0,0,.4);
+}
+
+.moduleItem .itemIllustration :hover .hoverBlack  img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+.moduleItem .itemTitle a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bolder;
+
+    text-align: center;
+    color: #232156;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.mySlides {display: none;}
+.mySlides img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slideshow-container .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container .active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .slideshow-container .text {font-size: 11px}
+}
+
