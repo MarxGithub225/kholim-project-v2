@@ -54,7 +54,7 @@
             <ul class="nav">
               <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
               <li class="scroll-to-section"><a href="formations.html">Formations</a></li>
-              <li class="scroll-to-section"><a href="#services">Audit &amp; Assistance</a></li>
+              <li class="scroll-to-section"><a href="audit&assistance.html">Audit &amp; Assistance</a></li>
               <li class="scroll-to-section"><a href="technique.html">Technique</a></li>
               <!-- <li class="scroll-to-section"><a href="#blog">Nos actualités</a></li>  -->
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contactez Nous</a></div></li> 
@@ -102,13 +102,14 @@
         <div class = "Right wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s" >
             
             <div class = "optionItem" v-for="(t, index) in Tools" :key="t.index"
-                
+            
                 >
                     <div class = "opt-icon">
                         <img :src = "t.icon" alt = "" />
                     </div>
 
-                    <div class = "opt-label" v-html="t.title">
+                    <div class = "opt-label" v-html="t.title"
+                    >
                     </div>
                 </div>                         
         </div>
@@ -395,9 +396,10 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
     }
     </script>
+
 </body>
 
 
