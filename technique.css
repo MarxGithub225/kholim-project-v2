@@ -28,17 +28,19 @@
 
 .bottomSide .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 50px;
 }
 
 
 .bottomSide .header-title {
-    font-size: 30px;
+    width: calc(70% - 50px);
+    font-size: 20px;
     font-weight: bolder;
     color: #f39520;
     text-transform: uppercase;
+    padding-left: 50px;
 }
 
 .bottomSide .vertical-line {
@@ -71,47 +73,11 @@
     font-size: 16px;
 }
 
-.bottomSide .avantagesList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-
-.bottomSide .avantagesList .avantagesListItem {
-    padding: 25px;
-    
-}
-
-.avantagesListItem ul {
-    list-style: none;
-    
-}
-
-
-.avantagesListItem ul li {
-    color: #232156;
-
-    
-} 
-
-.avantagesListItem ul li :before {
-    content: "•";
-    color: #f39520;
-    font-weight: 700;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    font-size: 15px;
-}
-
 
 .bottomSide .tools {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     margin-bottom: 25px;
     
 }
@@ -130,11 +96,10 @@
 }
 
 .bottomSide .toolImages {
-    width: 70%;
-
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     padding: 20px;
 
     
@@ -142,7 +107,7 @@
 
 
 .bottomSide .itemIllustration {
-    width: calc(100%/3);
+    width: calc(100%/3.2);
     height: 150px;
     background-position: center;
     background-size: cover;
@@ -187,185 +152,3 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.bottomSide-2{
-    padding: 15px;
-
-    
-}
-
-
-.bottomSide-2 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    margin-top: 50px;
-    
-
-
-}
-
-.bottomSide-2 .header .header-title {
-    font-size: 30px;
-    font-weight: bolder;
-    color: #232156;
-    text-transform: uppercase;
-}
-
-.bottomSide-2 .header .vertical-line {
-    height: 2px;
-    width: 30%;
-    background-color: #232156;
-}
-
-
-.bottomSide-2 .round {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #232156;
-
-    
-}
-
-.bottomSide-2 .round .round-content {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #f39520;
-}
-
-.bottomSide-2 .title-1 {
-    color: #f39520;
-    display: block;
-    margin: 15px 0;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.bottomSide-2 .avantagesList {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-
-.bottomSide-2 .avantagesList .avantagesListItem {
-    padding: 25px;
-    
-}
-
-
-.bottomSide-2 .avantagesList .avantagesListItem ul {
-    list-style: none;
-    
-}
-
-
-.bottomSide-2 .avantagesList .avantagesListItem ul li {
-    color: #f39520;
-
-    
-}
-
-
-.bottomSide-2 .avantagesList .avantagesListItem ul li:before {
-    content: "•";
-    color: #f39520;
-    font-weight: 700;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-    font-size: 15px;
-}
-
-.bottomSide-2 .tools {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin-bottom: 25px;
-    
-}
-
-.bottomSide-2 .tools .toolTitle {
-    width: 30%;
-    padding: 20px 10px;
-    background-color: #232156;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-.bottomSide-2 .tools .toolImages {
-    width: 70%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-    padding: 20px;
-
-    
-}
-
-.bottomSide-2 .itemIllustration {
-    width: calc(100%/3);
-    height: 150px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;    
-    cursor: pointer;
-    
-}
-
-.bottomSide-2 .itemIllustration .hoverBlack {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-    
-    
-}
-
-.bottomSide-2 .itemIllustration .hoverBlack img {
-    width: 40px;
-    height: auto;
-    display: none;
-}
-.bottomSide-2 .itemIllustration:hover .hoverBlack {
-    
-    background-color: rgba(0,0,0,.4);
-}
-
-.bottomSide-2 .itemIllustration:hover .hoverBlack img {
-    width: 40px;
-    height: auto;
-    display: block;
-}
