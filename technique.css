@@ -20,6 +20,33 @@
     color: #fff;
 }
 
+
+#topdetails {
+    padding : 15px
+}
+.sectionDetails {
+    width: 100%;
+    height: calc(100vh - 157px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.sectionDetails .label {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
 .bottomSide{
 
     padding: 15px;

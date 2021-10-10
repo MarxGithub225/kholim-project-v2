@@ -54,10 +54,9 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html" class="active">Accueil</a></li>
-              <li class="scroll-to-section"><a href="formations.html">Formations</a></li>
-              <li class="scroll-to-section"><a href="audit&assistance.html">Audit &amp; Assistance</a></li>
-              <li class="scroll-to-section"><a href="technique.html">Technique</a></li>
+                <li class="scroll-to-section"><a href="#top" class="active">Accueil</a></li>
+                <li class="scroll-to-section"><a href="pole-assistance-et-formation.html">Pôle Assistance &amp; Formations</a></li>
+                <li class="scroll-to-section"><a href="energie.html">Pôle Energie</a></li>
               <!-- <li class="scroll-to-section"><a href="#blog">Nos actualités</a></li>  -->
               <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contactez Nous</a></div></li> 
             </ul>        
@@ -75,10 +74,32 @@
     <div class = "LearningDetails header-text">
         <div class = "topSide">
             <div class = "title">
-                FROID ET CLIMATISATION
+                Assistance & Formation
             </div>
         </div>
-        <div class = "bottomSide" id="topdetails">
+
+        <div class="row" id="topdetails">
+            <div class="col-lg-6">
+                <a href="formations.html">
+                    <div class="sectionDetails" v-bind:style="{ backgroundImage: 'url(' + froid + ')' }">
+                        <div class="label">
+                            Formations
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <a href="eff-energetique.html">
+                    <div class="sectionDetails" v-bind:style="{ backgroundImage: 'url(' + efenergetique + ')' }">
+                        <div class="label">
+                            Assistance aux entreprises
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class = "bottomSide" >
             <div class="header"><div class="round"><div class="round-content"></div></div><div class="header-title"> Etude, dimensionnement et sélection des équipements  frigorifiques</div><div class="vertical-line"></div></div>
 
             <div class = "toolImages">
@@ -142,7 +163,7 @@
             
             
             
-        </div>
+        </div> -->
 
     </div>
 
@@ -252,6 +273,8 @@
         new Vue({
           el: '#topdetails',
           data : {
+            froid : "./images/tech/Climatisation/climatisation.jpg",
+            efenergetique : "./images/tech/Climatisation/climatisation-2.jpg",
             etude : [
                 "./images/tech/Climatisation/climatisation.jpg",
                 "./images/tech/Climatisation/climatisation-2.jpg",

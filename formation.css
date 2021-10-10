@@ -7,7 +7,6 @@
 .Learning .topSide .Left {
     width: 70%;
     height: 390px;
-    
 }
 
 
@@ -16,17 +15,21 @@
     height: 390px !important;
 }
 
+.rev_slider_wrapper {
+    left: 0 !important;
+    width: 100% !important;
+    height: 390px !important;
+}
+
+.rev_slider, .tp-fullwidth-forcer {
+    height: 390px !important;
+}
 
 .Learning .topSide {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 390px;
-
-
-    
-
-    
 }
 
 
